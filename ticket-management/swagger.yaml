@@ -1,0 +1,213 @@
+swagger: "2.0"
+info:
+  title: Resolute
+  description: Resolves a query/ticket in no time.
+definitions:
+
+  SocialId:
+    type: object
+    properties:
+      socialId:
+        type: integer
+        format: int64
+      source:
+        type: string
+      identifier:
+        type: string
+    
+  Customer:
+    type: object
+    properties:
+      CustomerId:
+        type: integer
+        format: int64
+      name:
+        type: string
+      email:
+        type: string
+      logourl:
+        type: string
+
+  auth:
+    type: object
+    properties:
+      authid:
+        type: integer
+        format: int64
+      username:
+        type: string
+      password:
+        type: string
+
+  department:
+    type: object
+    properties:
+      departmentid: 
+        type: integer
+        format: int64
+      departmentname: 
+        type: string
+
+  agent:
+    type: object
+    properties:
+      agentid:
+        type: integer
+        format: int64
+      agentname: 
+        type: string
+      Customerid:
+        type: integer
+        fromat: int64
+      authid:
+        type: integer
+        format: int64
+
+  Ticket:
+    type: object
+    properties:
+      ticketid:
+        type: integer
+        format: int64
+      subject:
+        type: string
+      description:
+        type: string
+      agentid:
+        type: integer
+        format: int64
+      departmentid:
+        type: string
+      source:
+        type: string
+      status:
+        type: string
+        enum:
+          - Opened
+          - Closed
+          - Pending
+      priority:
+        type: string
+      sla:
+        type: integer
+        format: int64
+      CustomerId:
+        type: integer
+        format: int64
+
+  user:
+    type: object
+    properties:
+      userid:
+        type: integer
+        format: int64
+      name:
+        type: string
+      socialid:
+        type: integer
+        format: int64
+
+  comments:
+    type: object
+    properties:
+      commentid:
+        type: integer
+        format: int64
+      comment:
+        type: string
+      ticketid:
+        type: integer
+        format: int64
+
+  conversations:
+    type: object
+    properties:
+      converseid:
+        type: integer
+        format: int64
+      conversation:
+        type: string
+      from:
+        type: string
+      to:
+        type: string
+      ticketid:
+        type: integer
+        format: int64
+
+  ticketCount:
+    type: object
+    properties:
+      totalTickets:
+        type: integer
+        format: int64
+      openTickets:
+        type: integer
+        format: int64
+      closedTickets:
+        type: integer
+        format: int64
+      dueTickets:
+        type: integer
+        format: int64
+
+paths:
+  /tickets:
+    get:
+      description: Gets all the tickets assigned to an agent
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Ticket'
+        404:
+          description: Tickets Not Found 
+
+  /tickets/status:
+    get:
+      description: Gets all the tickets by status
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Ticket'
+        400:
+          description: Invalid Status Entered
+        404:
+          description: Tickets Not Found
+
+  /tickets/ticketid:
+    get:
+      description: Gets all the tickets by TicketID
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/Ticket'
+        400:
+          description: Invalid ID Entered
+        404:
+          description: Tickets Not Found
+
+  /tickets/count:
+    get:
+      description: Gets all the tickets by status
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/ticketCount'
+        404: 
+          description: Tickets Not Found
