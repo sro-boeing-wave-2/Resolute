@@ -1,0 +1,14 @@
+D:\Workspace\resolute\Resolute\auth\bin\Debug\netcoreapp2.1\auth.deps.json
+D:\Workspace\resolute\Resolute\auth\bin\Debug\netcoreapp2.1\auth.runtimeconfig.json
+D:\Workspace\resolute\Resolute\auth\bin\Debug\netcoreapp2.1\auth.runtimeconfig.dev.json
+D:\Workspace\resolute\Resolute\auth\bin\Debug\netcoreapp2.1\auth.dll
+D:\Workspace\resolute\Resolute\auth\bin\Debug\netcoreapp2.1\auth.pdb
+D:\Workspace\resolute\Resolute\auth\obj\Debug\netcoreapp2.1\auth.csprojAssemblyReference.cache
+D:\Workspace\resolute\Resolute\auth\obj\Debug\netcoreapp2.1\auth.csproj.CoreCompileInputs.cache
+D:\Workspace\resolute\Resolute\auth\obj\Debug\netcoreapp2.1\auth.RazorAssemblyInfo.cache
+D:\Workspace\resolute\Resolute\auth\obj\Debug\netcoreapp2.1\auth.RazorAssemblyInfo.cs
+D:\Workspace\resolute\Resolute\auth\obj\Debug\netcoreapp2.1\auth.AssemblyInfoInputs.cache
+D:\Workspace\resolute\Resolute\auth\obj\Debug\netcoreapp2.1\auth.AssemblyInfo.cs
+D:\Workspace\resolute\Resolute\auth\obj\Debug\netcoreapp2.1\auth.RazorTargetAssemblyInfo.cache
+D:\Workspace\resolute\Resolute\auth\obj\Debug\netcoreapp2.1\auth.dll
+D:\Workspace\resolute\Resolute\auth\obj\Debug\netcoreapp2.1\auth.pdb
