@@ -65,63 +65,6 @@ namespace onboarding.Controllers
 
             return CreatedAtAction("GetCustomer_Signup", new { id = customer_Signup.id }, customer_Signup);
         }
-        //// PUT: api/Customer_Signup/5
-        //[HttpPut("{id}")]
-        //public async Task<IActionResult> PutCustomer_Signup([FromRoute] int id, [FromBody] Customer_Signup customer_Signup)
-        //{
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return BadRequest(ModelState);
-        //    }
-
-        //    if (id != customer_Signup.id)
-        //    {
-        //        return BadRequest();
-        //    }
-
-        //    _context.Entry(customer_Signup).State = EntityState.Modified;
-
-        //    try
-        //    {
-        //        await _context.SaveChangesAsync();
-        //    }
-        //    catch (DbUpdateConcurrencyException)
-        //    {
-        //        if (!Customer_SignupExists(id))
-        //        {
-        //            return NotFound();
-        //        }
-        //        else
-        //        {
-        //            throw;
-        //        }
-        //    }
-
-        //    return NoContent();
-        //}
-
-
-
-        //// DELETE: api/Customer_Signup/5
-        //[HttpDelete("{id}")]
-        //public async Task<IActionResult> DeleteCustomer_Signup([FromRoute] int id)
-        //{
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return BadRequest(ModelState);
-        //    }
-
-        //    var customer_Signup = await _context.Customer_Signup.FindAsync(id);
-        //    if (customer_Signup == null)
-        //    {
-        //        return NotFound();
-        //    }
-
-        //    _context.Customer_Signup.Remove(customer_Signup);
-        //    await _context.SaveChangesAsync();
-
-        //    return Ok(customer_Signup);
-        //}
 
         private bool Customer_SignupExists(int id)
         {
