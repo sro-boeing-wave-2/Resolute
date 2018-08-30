@@ -230,7 +230,7 @@ paths:
         404: 
           description: Tickets Not Found
 
-  /ticket:
+  /posttickets:
     post:
       tags:
        - Tickets
@@ -243,6 +243,25 @@ paths:
           required: true
           schema:
             $ref: '#/definitions/TwitterDto'
+      responses:
+        200:
+          description: OK
+        405:
+          description: Invalid Input
+
+  /puttickets:
+    put:
+      tags:
+       - Tickets
+      description: Updates an existing ticket
+      produces:
+        - application/json
+      parameters:
+        - name: body
+          in: body
+          required: true
+          schema:
+            $ref: '#/definitions/Ticket'
       responses:
         200:
           description: OK
