@@ -47,10 +47,10 @@ namespace auth.Controllers
         [HttpPost]
         public IActionResult VerifyUserToken([FromBody] string token)
         {
-            Boolean result = _authService.VerifyUserToken(token);
-            if (result)
+            string result = _authService.VerifyUserToken(token);
+            if (result != null && result != "")
             {
-                return new OkObjectResult(result);
+                return Ok(result);
             } else
             {
                 return NotFound();
