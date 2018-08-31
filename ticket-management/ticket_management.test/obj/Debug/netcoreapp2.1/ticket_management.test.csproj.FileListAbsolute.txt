@@ -1,0 +1,17 @@
+c:\users\admin\source\repos\ticket-management\ticket_management.test\bin\Debug\netcoreapp2.1\xunit.runner.visualstudio.dotnetcore.testadapter.dll
+c:\users\admin\source\repos\ticket-management\ticket_management.test\bin\Debug\netcoreapp2.1\xunit.runner.reporters.netcoreapp10.dll
+c:\users\admin\source\repos\ticket-management\ticket_management.test\bin\Debug\netcoreapp2.1\xunit.runner.utility.netcoreapp10.dll
+c:\users\admin\source\repos\ticket-management\ticket_management.test\bin\Debug\netcoreapp2.1\ticket_management.test.deps.json
+c:\users\admin\source\repos\ticket-management\ticket_management.test\bin\Debug\netcoreapp2.1\ticket_management.test.runtimeconfig.json
+c:\users\admin\source\repos\ticket-management\ticket_management.test\bin\Debug\netcoreapp2.1\ticket_management.test.runtimeconfig.dev.json
+c:\users\admin\source\repos\ticket-management\ticket_management.test\bin\Debug\netcoreapp2.1\ticket_management.test.dll
+c:\users\admin\source\repos\ticket-management\ticket_management.test\obj\Debug\netcoreapp2.1\ticket_management.test.csprojAssemblyReference.cache
+c:\users\admin\source\repos\ticket-management\ticket_management.test\obj\Debug\netcoreapp2.1\ticket_management.test.csproj.CoreCompileInputs.cache
+c:\users\admin\source\repos\ticket-management\ticket_management.test\obj\Debug\netcoreapp2.1\ticket_management.test.AssemblyInfoInputs.cache
+c:\users\admin\source\repos\ticket-management\ticket_management.test\obj\Debug\netcoreapp2.1\ticket_management.test.AssemblyInfo.cs
+c:\users\admin\source\repos\ticket-management\ticket_management.test\bin\Debug\netcoreapp2.1\ticket_management.dll
+c:\users\admin\source\repos\ticket-management\ticket_management.test\bin\Debug\netcoreapp2.1\ticket_management.pdb
+c:\users\admin\source\repos\ticket-management\ticket_management.test\obj\Debug\netcoreapp2.1\ticket_management.test.csproj.CopyComplete
+c:\users\admin\source\repos\ticket-management\ticket_management.test\bin\Debug\netcoreapp2.1\ticket_management.test.pdb
+c:\users\admin\source\repos\ticket-management\ticket_management.test\obj\Debug\netcoreapp2.1\ticket_management.test.dll
+c:\users\admin\source\repos\ticket-management\ticket_management.test\obj\Debug\netcoreapp2.1\ticket_management.test.pdb
