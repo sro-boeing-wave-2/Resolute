@@ -12224,11 +12224,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\admin\\source\\repos\\ticket-management\\ticket-management\\ticket_management.csproj",
+      "projectUniqueName": "E:\\resolute\\Resolute\\ticket-management\\ticket-management\\ticket_management.csproj",
       "projectName": "ticket_management",
-      "projectPath": "c:\\users\\admin\\source\\repos\\ticket-management\\ticket-management\\ticket_management.csproj",
+      "projectPath": "E:\\resolute\\Resolute\\ticket-management\\ticket-management\\ticket_management.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\admin\\source\\repos\\ticket-management\\ticket-management\\obj\\",
+      "outputPath": "E:\\resolute\\Resolute\\ticket-management\\ticket-management\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

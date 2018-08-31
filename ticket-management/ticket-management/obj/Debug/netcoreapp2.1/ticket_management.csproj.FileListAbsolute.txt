@@ -12,3 +12,17 @@ c:\users\admin\source\repos\ticket-management\ticket-management\bin\Debug\netcor
 c:\users\admin\source\repos\ticket-management\ticket-management\obj\Debug\netcoreapp2.1\ticket_management.dll
 c:\users\admin\source\repos\ticket-management\ticket-management\obj\Debug\netcoreapp2.1\ticket_management.pdb
 c:\users\admin\source\repos\ticket-management\ticket-management\obj\Debug\netcoreapp2.1\ticket_management.csprojAssemblyReference.cache
+E:\resolute\Resolute\ticket-management\ticket-management\bin\Debug\netcoreapp2.1\ticket_management.deps.json
+E:\resolute\Resolute\ticket-management\ticket-management\bin\Debug\netcoreapp2.1\ticket_management.runtimeconfig.json
+E:\resolute\Resolute\ticket-management\ticket-management\bin\Debug\netcoreapp2.1\ticket_management.runtimeconfig.dev.json
+E:\resolute\Resolute\ticket-management\ticket-management\bin\Debug\netcoreapp2.1\ticket_management.dll
+E:\resolute\Resolute\ticket-management\ticket-management\bin\Debug\netcoreapp2.1\ticket_management.pdb
+E:\resolute\Resolute\ticket-management\ticket-management\obj\Debug\netcoreapp2.1\ticket_management.csprojAssemblyReference.cache
+E:\resolute\Resolute\ticket-management\ticket-management\obj\Debug\netcoreapp2.1\ticket_management.csproj.CoreCompileInputs.cache
+E:\resolute\Resolute\ticket-management\ticket-management\obj\Debug\netcoreapp2.1\ticket_management.RazorAssemblyInfo.cache
+E:\resolute\Resolute\ticket-management\ticket-management\obj\Debug\netcoreapp2.1\ticket_management.RazorAssemblyInfo.cs
+E:\resolute\Resolute\ticket-management\ticket-management\obj\Debug\netcoreapp2.1\ticket_management.AssemblyInfoInputs.cache
+E:\resolute\Resolute\ticket-management\ticket-management\obj\Debug\netcoreapp2.1\ticket_management.AssemblyInfo.cs
+E:\resolute\Resolute\ticket-management\ticket-management\obj\Debug\netcoreapp2.1\ticket_management.RazorTargetAssemblyInfo.cache
+E:\resolute\Resolute\ticket-management\ticket-management\obj\Debug\netcoreapp2.1\ticket_management.dll
+E:\resolute\Resolute\ticket-management\ticket-management\obj\Debug\netcoreapp2.1\ticket_management.pdb
