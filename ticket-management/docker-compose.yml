@@ -1,0 +1,13 @@
+version: "3"
+services:
+    web:
+        build: ticket-management/
+        ports:
+            - "8083:5000"
+        depends_on:
+            - db
+    db:
+        image: "microsoft/mssql-server-linux"
+        environment:
+            SA_PASSWORD: "tm"
+            ACCEPT_EULA: "Y"
