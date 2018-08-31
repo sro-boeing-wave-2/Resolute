@@ -39,11 +39,11 @@ namespace ticket_management
                 Options.UseInMemoryDatabase("TestDb"));
 
             }
-            else if(_env.EnvironmentName == "Staging")
-            {
+            
+            
                 services.AddDbContext<TicketContext>(options =>
                      options.UseSqlServer(Configuration.GetConnectionString("TicketContext")));
-            }
+            
 
             services.AddScoped<ITicketService, TicketService>();
 

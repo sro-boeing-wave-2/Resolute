@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -e
-run_cmd="dotnet ticket_management.dll"
+run_cmd="dotnet run ticket_management"
 
 until dotnet ef database update; do
 	>&2 echo "SQL Server is starting up"
