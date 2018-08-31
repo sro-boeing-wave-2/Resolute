@@ -1,6 +1,0 @@
-c:\users\admin\source\repos\ticket-management\ticket-management\obj\Debug\netcoreapp2.1\ticket-management.csprojAssemblyReference.cache
-c:\users\admin\source\repos\ticket-management\ticket-management\obj\Debug\netcoreapp2.1\ticket-management.csproj.CoreCompileInputs.cache
-c:\users\admin\source\repos\ticket-management\ticket-management\obj\Debug\netcoreapp2.1\ticket-management.RazorAssemblyInfo.cache
-c:\users\admin\source\repos\ticket-management\ticket-management\obj\Debug\netcoreapp2.1\ticket-management.RazorAssemblyInfo.cs
-c:\users\admin\source\repos\ticket-management\ticket-management\obj\Debug\netcoreapp2.1\ticket-management.AssemblyInfoInputs.cache
-c:\users\admin\source\repos\ticket-management\ticket-management\obj\Debug\netcoreapp2.1\ticket-management.AssemblyInfo.cs
