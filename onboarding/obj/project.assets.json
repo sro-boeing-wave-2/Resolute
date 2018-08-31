@@ -12289,11 +12289,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Workspace\\Resolute\\onboarding\\onboarding.csproj",
+      "projectUniqueName": "D:\\Workspace\\resolute\\Resolute\\onboarding\\onboarding.csproj",
       "projectName": "onboarding",
-      "projectPath": "D:\\Workspace\\Resolute\\onboarding\\onboarding.csproj",
+      "projectPath": "D:\\Workspace\\resolute\\Resolute\\onboarding\\onboarding.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Workspace\\Resolute\\onboarding\\obj\\",
+      "outputPath": "D:\\Workspace\\resolute\\Resolute\\onboarding\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
