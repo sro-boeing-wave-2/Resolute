@@ -11529,11 +11529,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\resolute\\Resolute\\ticket-management\\ticket_management.test\\ticket_management.test.csproj",
+      "projectUniqueName": "E:\\Resolute\\Resolute\\ticket-management\\ticket_management.test\\ticket_management.test.csproj",
       "projectName": "ticket_management.test",
-      "projectPath": "E:\\resolute\\Resolute\\ticket-management\\ticket_management.test\\ticket_management.test.csproj",
+      "projectPath": "E:\\Resolute\\Resolute\\ticket-management\\ticket_management.test\\ticket_management.test.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "E:\\resolute\\Resolute\\ticket-management\\ticket_management.test\\obj\\",
+      "outputPath": "E:\\Resolute\\Resolute\\ticket-management\\ticket_management.test\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -11552,8 +11552,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "E:\\resolute\\Resolute\\ticket-management\\ticket-management\\ticket_management.csproj": {
-              "projectPath": "E:\\resolute\\Resolute\\ticket-management\\ticket-management\\ticket_management.csproj"
+            "E:\\Resolute\\Resolute\\ticket-management\\ticket-management\\ticket_management.csproj": {
+              "projectPath": "E:\\Resolute\\Resolute\\ticket-management\\ticket-management\\ticket_management.csproj"
             }
           }
         }

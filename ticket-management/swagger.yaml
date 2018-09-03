@@ -230,6 +230,51 @@ paths:
         404: 
           description: Tickets Not Found
 
+  /ticket/filter:
+    get:
+      tags:
+       - Tickets
+      description: Gets all tickets subject to the input fields 
+      produces:
+        - application/json
+      parameters:
+        - in: query
+          name: agentid
+          schema:
+            type: integer
+        - in: query
+          name: departmentid
+          schema:
+            type: integer
+        - in: query
+          name: userid
+          schema:
+            type: integer
+        - in: query
+          name: customerid
+          schema:
+            type: integer
+        - in: query
+          name: source
+          schema:
+            type: string
+        - in: query
+          name: priority
+          schema:
+            type: string
+        - in: query
+          name: status
+          schema:
+            type: string
+      responses:
+        200:
+          description: OK
+          schema:
+            $ref: '#/definitions/Ticket'
+        404:
+          description: Tickets Not Found
+
+
   /posttickets:
     post:
       tags:
