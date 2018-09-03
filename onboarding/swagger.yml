@@ -1,0 +1,61 @@
+swagger: "2.0"
+info:
+  title: Resolute
+  description: Onboarding the customers and getting their users and agents.
+  version: "1.0.0"
+definitions:
+  Customer_Signup:
+    type: object
+    properties:
+      id:
+        type: integer
+      customer_name:
+        type: string
+      email:
+        type: string
+      password:
+        type: string
+      logo_url:
+        type: string
+paths:
+  /Customer_Signup:
+    get:
+      description: Get all the customers who signed up
+      produces:
+        - application/json
+      responses:
+        200:
+          description: OK
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Customer_Signup'
+    post:
+      description: Add a new customer who signs up
+      produces:
+        - application/json
+      responses:
+        201:
+          description: Created
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Customer_Signup'      
+  /Customer_Signup/{id}:
+    get:
+      description: Get the customer by id who signed up
+      produces:
+        - application/json
+      parameters:
+      - name: "id"
+        in: "path"
+        description: "ID of Customer to return"
+        required: true
+        type: "integer"
+      responses:
+        200:
+          description: OK
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Customer_Signup'

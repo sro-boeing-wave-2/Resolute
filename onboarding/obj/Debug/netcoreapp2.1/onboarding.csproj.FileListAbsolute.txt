@@ -3,6 +3,7 @@ D:\Workspace\Resolute\onboarding\bin\Debug\netcoreapp2.1\onboarding.runtimeconfi
 D:\Workspace\Resolute\onboarding\bin\Debug\netcoreapp2.1\onboarding.runtimeconfig.dev.json
 D:\Workspace\Resolute\onboarding\bin\Debug\netcoreapp2.1\onboarding.dll
 D:\Workspace\Resolute\onboarding\bin\Debug\netcoreapp2.1\onboarding.pdb
+D:\Workspace\Resolute\onboarding\obj\Debug\netcoreapp2.1\onboarding.csprojAssemblyReference.cache
 D:\Workspace\Resolute\onboarding\obj\Debug\netcoreapp2.1\onboarding.csproj.CoreCompileInputs.cache
 D:\Workspace\Resolute\onboarding\obj\Debug\netcoreapp2.1\onboarding.RazorAssemblyInfo.cache
 D:\Workspace\Resolute\onboarding\obj\Debug\netcoreapp2.1\onboarding.RazorAssemblyInfo.cs
@@ -11,4 +12,3 @@ D:\Workspace\Resolute\onboarding\obj\Debug\netcoreapp2.1\onboarding.AssemblyInfo
 D:\Workspace\Resolute\onboarding\obj\Debug\netcoreapp2.1\onboarding.RazorTargetAssemblyInfo.cache
 D:\Workspace\Resolute\onboarding\obj\Debug\netcoreapp2.1\onboarding.dll
 D:\Workspace\Resolute\onboarding\obj\Debug\netcoreapp2.1\onboarding.pdb
-D:\Workspace\Resolute\onboarding\obj\Debug\netcoreapp2.1\onboarding.csprojAssemblyReference.cache
