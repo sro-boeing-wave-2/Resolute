@@ -4,161 +4,131 @@ info:
   description: Resolves a query/ticket in no time.
 definitions:
 
-  SocialId:
+  ChatDto:
     type: object
     properties:
-      socialId:
+      ChatId:
         type: integer
         format: int64
-      source:
+      Description:
         type: string
-      identifier:
+      Userhandle:
+        type: string
+      Customerhandle:
         type: string
     
-  Customer:
+  Comments:
     type: object
     properties:
-      CustomerId:
+      CommentId:
         type: integer
         format: int64
-      name:
+      Comment:
         type: string
-      email:
+      CreatedOn:
         type: string
-      logourl:
+      CreatedBy:
+        type: string
+      UpdatedOn:
+        type: string
+      UpdatedBy:
         type: string
 
-  auth:
+  Conversation:
     type: object
     properties:
-      authid:
+      ConversationId:
         type: integer
         format: int64
-      username:
+      ConversationString:
         type: string
-      password:
+      From:
         type: string
-
-  department:
-    type: object
-    properties:
-      departmentid: 
-        type: integer
-        format: int64
-      departmentname: 
+      To:
         type: string
-
-  agent:
-    type: object
-    properties:
-      agentid:
-        type: integer
-        format: int64
-      agentname: 
+      CreatedOn:
         type: string
-      Customerid:
-        type: integer
-        fromat: int64
-      authid:
-        type: integer
-        format: int64
+      CreatedBy:
+        type: string
+      UpdatedOn:
+        type: string
+      UpdatedBy:
+        type: string
 
   Ticket:
     type: object
     properties:
-      ticketid:
+      TicketId:
         type: integer
         format: int64
-      subject:
+      Subject:
         type: string
-      description:
+      Description:
         type: string
-      agentid:
-        type: integer
-        format: int64
-      departmentid:
+      Source:
         type: string
-      source:
+      Priority:
         type: string
-      status:
+      Status:
         type: string
         enum:
           - Opened
           - Closed
           - Pending
-      priority:
-        type: string
-      sla:
+      Sla:
         type: integer
         format: int64
-      CustomerId:
+      Comment:
+        type: string
+      Conversation:
+        type: string
+      CreatedOn:
+        type: string
+      CreatedBy:
+        type: string
+      UpdatedOn:
+        type: string
+      UpdatedBy:
+        type: string
+      Agentid:
+        type: integer
+        format: int64
+      Departmentid:
+        type: integer
+        format: int64
+      Userid:
+        type: integer
+        format: int64
+      Customerid:
         type: integer
         format: int64
 
-  user:
+  TicketCount:
     type: object
     properties:
-      userid:
+      Total:
         type: integer
         format: int64
-      name:
-        type: string
-      socialid:
+      Open:
         type: integer
         format: int64
-
-  comments:
-    type: object
-    properties:
-      commentid:
+      Closed:
         type: integer
         format: int64
-      comment:
-        type: string
-      ticketid:
-        type: integer
-        format: int64
-
-  conversations:
-    type: object
-    properties:
-      converseid:
-        type: integer
-        format: int64
-      conversation:
-        type: string
-      from:
-        type: string
-      to:
-        type: string
-      ticketid:
-        type: integer
-        format: int64
-
-  ticketCount:
-    type: object
-    properties:
-      totalTickets:
-        type: integer
-        format: int64
-      openTickets:
-        type: integer
-        format: int64
-      closedTickets:
-        type: integer
-        format: int64
-      dueTickets:
+      Due:
         type: integer
         format: int64
 
   TwitterDto:
     type: object
     properties: 
-      twitterid:
+      Twitterid:
         type: string
-      dsecription:
+      Description:
         type: string
-      userhandle:
+      Userhandle:
+        type: string
+      Customerhandle:
         type: string
 
 paths:
@@ -226,7 +196,7 @@ paths:
         200:
           description: OK
           schema:
-            $ref: '#/definitions/ticketCount'
+            $ref: '#/definitions/TicketCount'
         404: 
           description: Tickets Not Found
 
