@@ -11,6 +11,7 @@ using System.IO;
 using System.Text;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.Extensions.Options;
+using onboarding.Services;
 
 namespace onboarding.Controllers
 {
@@ -18,20 +19,17 @@ namespace onboarding.Controllers
     [ApiController]
     public class Customer_SignupController : ControllerBase
     {
-        private readonly SignUpContext _context;
-
-        public Customer_SignupController(SignUpContext context)
+        private ICredentialsServices _service;
+        public Customer_SignupController(ICredentialsServices service)
         {
-            _context = context;
+            _service = service;
         }
-
         // GET: api/Customer_Signup
         [HttpGet]
         public IEnumerable<Customer_Signup> GetCustomer_Signup()
         {
-            return _context.Customer_Signup;
+            return _service.GetAllSignUp();
         }
-
         // GET: api/Customer_Signup/5
         [HttpGet("{id}")]
         public async Task<IActionResult> GetCustomer_Signup([FromRoute] int id)
@@ -40,17 +38,13 @@ namespace onboarding.Controllers
             {
                 return BadRequest(ModelState);
             }
-
-            var customer_Signup = await _context.Customer_Signup.FindAsync(id);
-
+            Customer_Signup customer_Signup = await _service.GetSignUp(id);
             if (customer_Signup == null)
             {
                 return NotFound();
             }
-
             return Ok(customer_Signup);
         }
-
         // POST: api/Customer_Signup
         [HttpPost]
         public async Task<IActionResult> PostCustomer_Signup([FromBody] Customer_Signup customer_Signup)
@@ -59,16 +53,8 @@ namespace onboarding.Controllers
             {
                 return BadRequest(ModelState);
             }
-
-            _context.Customer_Signup.Add(customer_Signup);
-            await _context.SaveChangesAsync();
-
+            await _service.CreateCredentials(customer_Signup);
             return CreatedAtAction("GetCustomer_Signup", new { id = customer_Signup.id }, customer_Signup);
-        }
-
-        private bool Customer_SignupExists(int id)
-        {
-            return _context.Customer_Signup.Any(e => e.id == id);
-        }
+        }   
     }
 }

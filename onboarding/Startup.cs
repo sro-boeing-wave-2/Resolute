@@ -12,6 +12,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
 using onboarding.Models;
+using onboarding.Services;
 
 namespace onboarding
 {
@@ -27,10 +28,13 @@ namespace onboarding
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options => options.AddPolicy("AppPolicy", o => o.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin()));
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
             services.AddDbContext<SignUpContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("SignUpContext")));
+            services.AddScoped<ICredentialsServices, CredentialsServices>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,7 +48,7 @@ namespace onboarding
             {
                 app.UseHsts();
             }
-
+            app.UseCors("AppPolicy");
             app.UseHttpsRedirection();
             app.UseMvc();
         }
